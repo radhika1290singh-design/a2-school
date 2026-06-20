@@ -1,0 +1,9 @@
+{
+  "project": "a2-school",
+  "description": "School SaaS platform project settings",
+  "permissions": {
+    "allow": [],
+    "deny": []
+  },
+  "env": {}
+}
