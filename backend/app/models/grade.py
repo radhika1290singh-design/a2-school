@@ -5,10 +5,10 @@ from sqlalchemy.orm import Mapped, mapped_column
 from app.database import Base
 
 
-class Class(Base):
-    __tablename__ = "classes"
+class Grade(Base):
+    __tablename__ = "grades"
     __table_args__ = (
-        UniqueConstraint("school_id", "name", name="uq_classes_school_name"),
+        UniqueConstraint("school_id", "name", name="uq_grades_school_name"),
     )
 
     id: Mapped[uuid.UUID] = mapped_column(UUID(as_uuid=True), primary_key=True, default=uuid.uuid4)

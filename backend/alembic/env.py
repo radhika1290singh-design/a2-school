@@ -19,7 +19,7 @@ import app.models.school       # noqa: F401
 import app.models.user         # noqa: F401
 import app.models.otp_request   # noqa: F401
 import app.models.academic_year   # noqa: F401
-import app.models.class_          # noqa: F401
+import app.models.grade            # noqa: F401
 import app.models.section         # noqa: F401
 import app.models.enrollment      # noqa: F401
 import app.models.attendance      # noqa: F401

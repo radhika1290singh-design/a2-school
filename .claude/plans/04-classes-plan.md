@@ -13,7 +13,7 @@ year-end promotion sequencing and must stay gap-free.
 
 | Action | Path |
 |--------|------|
-| **Create** | `backend/app/models/class_.py` |
+| **Create** | `backend/app/models/grade.py` |
 | **Create** | `backend/alembic/versions/0004_create_classes_table.py` |
 | **Edit**   | `backend/alembic/env.py` — add `import app.models.class_` |
 
