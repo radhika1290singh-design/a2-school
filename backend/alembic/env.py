@@ -17,7 +17,17 @@ load_dotenv(Path(__file__).resolve().parents[1] / ".env")
 from app.database import Base  # noqa: E402
 import app.models.school       # noqa: F401
 import app.models.user         # noqa: F401
-import app.models.otp_request  # noqa: F401
+import app.models.otp_request   # noqa: F401
+import app.models.academic_year   # noqa: F401
+import app.models.class_          # noqa: F401
+import app.models.section         # noqa: F401
+import app.models.enrollment      # noqa: F401
+import app.models.attendance      # noqa: F401
+import app.models.result          # noqa: F401
+import app.models.leave_application  # noqa: F401
+import app.models.fee_period      # noqa: F401
+import app.models.event           # noqa: F401
+import app.models.holiday         # noqa: F401
 
 config = context.config
 
