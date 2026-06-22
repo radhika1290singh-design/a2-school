@@ -1,6 +1,6 @@
 import enum
 import uuid
-from sqlalchemy import Text, DateTime, Boolean, Enum as SAEnum, ForeignKey, text
+from sqlalchemy import Text, DateTime, Boolean, Integer, Enum as SAEnum, ForeignKey, text
 from sqlalchemy.dialects.postgresql import UUID
 from sqlalchemy.orm import Mapped, mapped_column
 from app.database import Base
@@ -25,6 +25,7 @@ class OtpRequest(Base):
     )
     expires_at: Mapped[DateTime] = mapped_column(DateTime(timezone=True), nullable=False)
     used: Mapped[bool] = mapped_column(Boolean, nullable=False, server_default=text("false"))
+    attempt_count: Mapped[int] = mapped_column(Integer, nullable=False, server_default=text("0"))
     created_at: Mapped[DateTime] = mapped_column(
         DateTime(timezone=True), server_default=text("now()"), nullable=False
     )
